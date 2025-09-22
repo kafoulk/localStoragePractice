@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Local Storage App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Student Manager</h1>
+
+      <form id="studentForm">
+        <label>Name: <input type="text" id="name" required /></label>
+        <label>Age: <input type="number" id="age" required /></label>
+        <label>Phone: <input type="tel" id="phone" required /></label>
+        <label>Email: <input type="email" id="email" required /></label>
+        <label
+          >Classes:
+          <input
+            type="text"
+            id="classes"
+            placeholder="Math, Science, History"
+            required
+          />
+        </label>
+        <button type="submit">Add Student</button>
+      </form>
+
+      <button id="showStudents" class="showStudents">Show Students</button>
+
+      <section id="studentList"></section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
